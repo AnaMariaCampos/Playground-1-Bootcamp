@@ -17,7 +17,7 @@ body {
 }
 
 .responsive {
-    max-width: 50%;
+    width: 10%;
 }
 
 .item-entry {
@@ -33,7 +33,7 @@ body {
 .item-description {
     text-transform: lowercase;
     font-size: 16px;
-    display: inline;
+    display: block;
 }
 
 .quantity {
@@ -44,5 +44,36 @@ body {
     cursor: pointer;
     color: #666666;
     font-size: 16px;
-    font-weight: ;
+    font-weight: bold;
+    padding: 6px 12px;
+    text-shadow: 0px 1px 0px #ffffff;
+}
+
+.quantity:active {
+    position: relative;
+    top: 1px;
+}
+
+.quantity-amount {
+    color: #666666;
+    font-weight: bold;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.value {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    min-width: 100px;
+}
+
+.shopping-footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.shopping-footer >span {
+    font-weight: 700;
+    font-size: 30px;
 }

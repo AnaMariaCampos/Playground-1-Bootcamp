@@ -3,23 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="shopping-container">
       <div class="shopping-header">
-        <h2 class="titulo">SHOPPING CART</h2>
+        <h2>SHOPPING CART</h2>
       </div>
       <div class="shopping-body">
         <div class="shopping-item">
           <div class="selection">
             <input id="item1" type="checkbox" />
           </div>
-          <img class="responsive" src="" alt="" />
+          <img class="responsive" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxEPERAPDxAPEA4ODxAVEw8QEBAPEBASFREXFhYTFRMYKCggGBolGxUWITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGA8PFS0dFSUtNystNzctMy0rLS0rLzc3Kys0Ny0tKys3Kzc3OCsrKzcrMy8tKys4Kzc3KysvNy0tK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQMCBAUGBwj/xAA7EAACAgACBwMJBgYDAAAAAAAAAQIRAyEEBRIxQVFhcZGhBhMVQlOBkrHRIjJSosHwByMzcoLhFENj/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECAwUE/8QAHhEBAAMBAAEFAAAAAAAAAAAAAAECEQMxBAUhMkH/2gAMAwEAAhEDEQA/APuIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGnj6xhCew7fNr1X2AbgMMLFjNXGSkuadrsMwAAAAAAAAAAAAAAAAAAAAAAAAAAAFGFpmHN7MMSEnbX2ZJ5p01a4pp5HO8rtPejaHpGLF1ibGzCt+3N7Ma6537j5j/AAz1j/V0Zye1fncN3neUZ13RfeHG3aK9K0n9fZgUaFj+chGXFrPo1k/EvDsAESlSb5IDU1jpfm1S+/Ld0XM4OIrTVtWnmnnnxT5luNiubc363y4Ipk+BUcbB0PStEcP+HiJ4caUoSbUpLi36s3x4caPYaHrdSSWItl1vim0+1b0zlRiYQxknsu3JpvdlSSysMUpFPHh31rPDuvtdtZG5GSatO0+KPJywdqak20+V5VXI39F094Kca2ld73l0GOjvA0ND1pDEjtSah/c6XibuHiKWcWmujsgyAAAAAAAAAAAAAAAAAAAAAeM/ibp8sPR44WFHaxsTba3LYjsuDnbazqbSWdt7sj4xq/TJ4E4Y2E6xMKW1FvdyafRptPtPWeXGt8XT9NxMLRlOUYVCMYK21hydytbltNu+w48/JXToK3o02q9Vwm+6LssPG9Xa/S+84mcfUfI3yrwdIi9l03TxMFu54cuMkvWj1XTjkeywsWM1cWpLmnZ+Zp4eJgzWWJhYkXatSw5x6rc0d/V/l1puDVyji9ZpxnX98ab99jHfl7hGZ0jJffQfJdV/xJ0vHxIYOHo8ZTm6X8zJc5O4vJLM9y9NxWvtT+FbIx93PrXpG1n4a2scLEw8aUIqPm5faUryje9OPbe4yhAyrvDZW0URRJIGvpWC5xqM5YcrT2o1arhTtNP90WJVvzfzyMmrqmqvPK7VcHwzomgKYYyknFXtRdO4uPvV70XaNOUJXF01WXCnwa47iKMJwbacZONO6VVLLc0wO3ha2g62ri+PFWbuFiKS2ou0+J5eUcv3zLcLTGqeHJpO7Wa8HxJivTA4eiazmm3K5RTprK929G/DWmE/Wa6OLIN0GGFiKSuLtGYAAAAAAAAAAAAwYzeT7GB4bU2qMPRlLYzniS2p4jX2pP8ARdP9t9aJRh7l2L5F0WVmIiIyFemaFhY0dnGw4YkeU4qXzPNaZ5A6JN3B4uF0hNSX50z1lkWVm/Kl/tGuPqLycwNCT80m5y34k2nNrlyS7KOsSQw1WsVjIjICKJAUIt3VZU87W+1lX73ENp7UU80s6ecbWT6GSAhRSySSS4LJEkmO0rStW02lebSq3XvXeAb3b8+m7LiQo/rvbZlFVvd9cv0AGNCjIxSvelab69j7aAxpp2m65cBVVlu+hmAMtF0qcXtRuOSuDaa99Zdx39F0hYkVJe9cmectmUcWUfutxb5Pf2kwenB52OnYv433Jma1li/iT7YoYrvg42Hrea+9GLXS0zp6LpMcRXHhvT3oguAAAAACH13EkPruA8paWW9JtJ80nkzNTKaM0ur8DQt2htIr978BXVgWbSG0VU+fgKfPwAtsNlefNdzGfQC2wVW+S7xfR96CLWIvJWqdK1d0+Vle12ja7e4C0Fan1J852ASkpVKuqtU1a5PcZGO32d42+niBIojb7O8jb7AJaJcbMdvhkFPq8uSAmEQ2lxMH2b+Yr9pAS5dP0IwdKlhu4NJ9l2jFr30QRXq8Oe0k+aT70ZFGgX5uG0qaisvl4F5AAAAr0hvYnW/ZlXbRYQB5GLLEzuaRqzCk72Kb5OUfBGtLU0OG0v8AJ/qXRzA0dH0Kr+9PsuNfKyFqPf8AzcT8mXgNHPJRv+hHX9Wd86h9CfQv/pP8v0GjnZ8TI3vQz9pP8v0MPQ0vay+GI0agNv0LL2svhiQ9TS9rPuiNGqC+Wpp+1l8MDH0Lie2n8MPoNFQLfQuJ7afww+hPobE9rP4YDRRsrku4bC5LuNpapn7SXdEzWqJe0l3RGjT2VyQN30K/azXuh9CVqNVTxca73rza933Ro0rIckdFahw8rnjP/OKvuS8DYw9T4Ef+u6/HKc13SbQ0cWMtp1FOT5RTb8DZhq/Gl6ldZNLw3new8NRyikl0SRkNHKwtTfjn7oKvF/Q3sDRMPD+7FJ83m+9l4IJAAAAAAAAAAAAAAAAAAAUABFCiQBFCiQBFCiQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/9k=" alt="">
           <div class="item-entry">
-            <span class="item-name">Name</span>
-            <span class="item-description">Description</span>
+            <span class="item-name">Zapatilla Stan Smith</span>
+            <span class="item-description"
+              >Cómodas zapatillas de cuero que no pasan de moda</span
+            >
+          </div>
+          <div>
+            <button class="quantity">+</button>
+            <span class="quantity-amount">2</span>
+            <button class="quantity">-</button>
+          </div>
+          <div class="value">
+            <span>&#36;</span>
+            <span>300</span>
+          </div>
+        </div>
+        <div class="shopping-item">
+          <div class="selection">
+            <input class="item1" type="checkbox" />
+          </div>
+          <img class="responsive" src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxISEhMTExMTEhUVGBcYFxcVFxYXGBUWGBMYFhUZFxgaHSghGBslGxUVITEjJisuLi4vFx81ODMsNygtLisBCgoKDg0NFQ8PFSsZFx0tNysrLSstKystLSstNy03KzcrKysrKzc3Ky0rKysrNzc3LSstNy0rKys3LSsrKysrLf/AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwMEBQYIAgH/xABKEAABAwICBgcCCgQNBQAAAAABAAIDBBEFIQYSMUFRYQcTcYGRofBysSIjMkJSYpKiwdEzQ3OTCBQVFkRUY4KywtLT4RdTVbPx/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEC/8QAGBEBAQEBAQAAAAAAAAAAAAAAABEBUSH/2gAMAwEAAhEDEQA/AJxREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEReZJA0XcQANpJsB3oPSLyx4IuCCDsIzBXpAREQEREBEWr4t0hYbTktfVMe8ZFsQdKQeB1AQ3vIQbQi17RzTSirnOZBLd7c9R7XMcRxaHAaw7FsKAiIgIiICIiAiIgIiICIiAiIgIiICIiD442FzkAuXNMtKpsRqZHue4wB56mK51GsBs12rsLyM7nPO2zJdB9IVYYcMrXtNnCCQAjaC5uqCO9y5ahytZXBuOhemE2HSBzCXwk/GQ3+C4fSaDk14479h5dE4RikVVCyaF4fG8XBHmCNxByIOwhcnxO3eH5LYdE9LqrD3kwkOa75cT76j/rDe11stYd4Ngg6bRRRSdNcWXXUU7Tv6p7JB97UV8/pnobXEFYTw1Ih59aoJJQlQ5ifT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" alt=""/>
+          <div class="item-entry">
+            <span class="item-name">Zapatilla Response Runner</span>
+            <span class="item-description">Cómoda zapatilla para hacer deporte</span>
           </div>
           <div>
             <button class="quantity">+</button>
@@ -35,15 +56,15 @@
           <div class="selection">
             <input id="item1" type="checkbox" />
           </div>
-          <img src="" alt="" />
+          <img class="responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtbKf80YDPCAmuCh3StYxUuvtrUHQBfvQQCw&s" alt=""/>
           <div class="item-entry">
-            <span class="item-name">Name</span>
-            <span class="item-description">Description</span>
+            <span class="item-name">Zapatilla Fútbol</span>
+            <span class="item-description">comoda zapatilla futbolera</span>
           </div>
           <div>
-            <button>+</button>
-            <span>2</span>
-            <button>-</button>
+            <button class="quantity">+</button>
+            <span class="quantity-amount">2</span>
+            <button class="quantity">-</button>
           </div>
           <div class="value">
             <span>&#36;</span>
@@ -54,34 +75,15 @@
           <div class="selection">
             <input id="item1" type="checkbox" />
           </div>
-          <img src="" alt="" />
+          <img class="responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ86R4Wu1DJ7iLmeDJ7LebL1UxZDrKWUkC-w&s" alt="" />
           <div class="item-entry">
-            <span class="item-name">Name</span>
-            <span class="item-description">Description</span>
+            <span class="item-name">Zapatilla basquetlball</span>
+            <span class="item-description">Excelente zapatilla para amantes del basquetball</span>
           </div>
           <div>
-            <button>+</button>
-            <span>2</span>
-            <button>-</button>
-          </div>
-          <div class="value">
-            <span>&#36;</span>
-            <span>300</span>
-          </div>
-        </div>
-        <div class="shopping-item">
-          <div class="selection">
-            <input id="item1" type="checkbox" />
-          </div>
-          <img src="" alt="" />
-          <div class="item-entry">
-            <span class="item-name">Name</span>
-            <span class="item-description">Description</span>
-          </div>
-          <div>
-            <button>+</button>
-            <span>2</span>
-            <button>-</button>
+            <button class="quantity">+</button>
+            <span class="quantity-amount">2</span>
+            <button class="quantity">-</button>
           </div>
           <div class="value">
             <span>&#36;</span>
@@ -97,4 +99,3 @@
     </div>
   </body>
 </html>
-
